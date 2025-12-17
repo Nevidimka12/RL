@@ -1,0 +1,167 @@
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+        
+ Version information:
+  ml-agents: 0.28.0,
+  ml-agents-envs: 0.28.0,
+  Communicator API: 1.5.0,
+  PyTorch: 1.8.1+cu102
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1765989956.741565    1630 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1765989956.766081    1641 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1765989956.778295    1632 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1765989956.783600    1631 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[INFO] Connected to Unity environment with package version 3.0.0-exp.1 and communication version 1.5.0
+[INFO] Connected to Unity environment with package version 3.0.0-exp.1 and communication version 1.5.0
+[INFO] Connected to Unity environment with package version 3.0.0-exp.1 and communication version 1.5.0
+[INFO] Connected new brain: AmyImitation?team=0
+[INFO] Connected to Unity environment with package version 3.0.0-exp.1 and communication version 1.5.0
+[INFO] Connected new brain: AmyImitation?team=0
+[INFO] Connected new brain: AmyImitation?team=0
+[INFO] Connected new brain: AmyImitation?team=0
+[INFO] Hyperparameters for behavior name AmyImitation: 
+	trainer_type:	ppo
+	hyperparameters:	
+	  batch_size:	128
+	  buffer_size:	2048
+	  learning_rate:	0.0003
+	  beta:	0.0005
+	  epsilon:	0.2
+	  lambd:	0.95
+	  num_epoch:	3
+	  learning_rate_schedule:	constant
+	  beta_schedule:	constant
+	  epsilon_schedule:	constant
+	network_settings:	
+	  normalize:	True
+	  hidden_units:	128
+	  num_layers:	2
+	  vis_encode_type:	simple
+	  memory:	None
+	  goal_conditioning_type:	hyper
+	  deterministic:	False
+	reward_signals:	
+	  extrinsic:	
+	    gamma:	0.99
+	    strength:	1.0
+	    network_settings:	
+	      normalize:	False
+	      hidden_units:	128
+	      num_layers:	2
+	      vis_encode_type:	simple
+	      memory:	None
+	      goal_conditioning_type:	hyper
+	      deterministic:	False
+	init_path:	None
+	keep_checkpoints:	100
+	checkpoint_interval:	50000
+	max_steps:	1000000
+	time_horizon:	64
+	summary_freq:	15000
+	threaded:	True
+	self_play:	None
+	behavioral_cloning:	None
+[INFO] AmyImitation. Step: 15000. Time Elapsed: 131.456 s. Mean Reward: -0.369. Std of Reward: 3.690. Training.
+[INFO] AmyImitation. Step: 30000. Time Elapsed: 258.305 s. Mean Reward: 0.147. Std of Reward: 5.144. Training.
+[INFO] AmyImitation. Step: 45000. Time Elapsed: 387.162 s. Mean Reward: -0.074. Std of Reward: 5.582. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-49989.onnx
+[INFO] AmyImitation. Step: 60000. Time Elapsed: 511.274 s. Mean Reward: 0.398. Std of Reward: 6.859. Training.
+[INFO] AmyImitation. Step: 75000. Time Elapsed: 635.745 s. Mean Reward: 0.198. Std of Reward: 6.333. Training.
+[INFO] AmyImitation. Step: 90000. Time Elapsed: 759.889 s. Mean Reward: 0.703. Std of Reward: 6.784. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-99994.onnx
+[INFO] AmyImitation. Step: 105000. Time Elapsed: 884.341 s. Mean Reward: 1.232. Std of Reward: 8.229. Training.
+[INFO] AmyImitation. Step: 120000. Time Elapsed: 1011.897 s. Mean Reward: 1.200. Std of Reward: 7.978. Training.
+[INFO] AmyImitation. Step: 135000. Time Elapsed: 1136.208 s. Mean Reward: 1.379. Std of Reward: 7.688. Training.
+[INFO] AmyImitation. Step: 150000. Time Elapsed: 1257.238 s. Mean Reward: 3.194. Std of Reward: 8.775. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-149940.onnx
+[INFO] AmyImitation. Step: 165000. Time Elapsed: 1380.408 s. Mean Reward: 3.362. Std of Reward: 11.017. Training.
+[INFO] AmyImitation. Step: 180000. Time Elapsed: 1504.907 s. Mean Reward: 4.925. Std of Reward: 11.494. Training.
+[INFO] AmyImitation. Step: 195000. Time Elapsed: 1630.784 s. Mean Reward: 5.065. Std of Reward: 10.316. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-199941.onnx
+[INFO] AmyImitation. Step: 210000. Time Elapsed: 1753.646 s. Mean Reward: 5.995. Std of Reward: 10.523. Training.
+[INFO] AmyImitation. Step: 225000. Time Elapsed: 1875.573 s. Mean Reward: 6.304. Std of Reward: 11.504. Training.
+[INFO] AmyImitation. Step: 240000. Time Elapsed: 1998.739 s. Mean Reward: 7.766. Std of Reward: 12.784. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-249979.onnx
+[INFO] AmyImitation. Step: 255000. Time Elapsed: 2125.362 s. Mean Reward: 8.639. Std of Reward: 11.995. Training.
+[INFO] AmyImitation. Step: 270000. Time Elapsed: 2248.573 s. Mean Reward: 9.363. Std of Reward: 12.752. Training.
+[INFO] AmyImitation. Step: 285000. Time Elapsed: 2372.260 s. Mean Reward: 9.294. Std of Reward: 13.318. Training.
+[INFO] AmyImitation. Step: 300000. Time Elapsed: 2495.145 s. Mean Reward: 11.033. Std of Reward: 13.341. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-299991.onnx
+[INFO] AmyImitation. Step: 315000. Time Elapsed: 2617.797 s. Mean Reward: 13.065. Std of Reward: 14.299. Training.
+[INFO] AmyImitation. Step: 330000. Time Elapsed: 2742.377 s. Mean Reward: 15.483. Std of Reward: 13.614. Training.
+[INFO] AmyImitation. Step: 345000. Time Elapsed: 2863.837 s. Mean Reward: 18.034. Std of Reward: 14.632. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-349957.onnx
+[INFO] AmyImitation. Step: 360000. Time Elapsed: 2986.736 s. Mean Reward: 17.434. Std of Reward: 15.008. Training.
+[INFO] AmyImitation. Step: 375000. Time Elapsed: 3109.968 s. Mean Reward: 18.384. Std of Reward: 14.962. Training.
+[INFO] AmyImitation. Step: 390000. Time Elapsed: 3234.700 s. Mean Reward: 16.510. Std of Reward: 14.197. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-399985.onnx
+[INFO] AmyImitation. Step: 405000. Time Elapsed: 3360.303 s. Mean Reward: 19.231. Std of Reward: 14.171. Training.
+[INFO] AmyImitation. Step: 420000. Time Elapsed: 3485.687 s. Mean Reward: 18.326. Std of Reward: 14.394. Training.
+[INFO] AmyImitation. Step: 435000. Time Elapsed: 3611.889 s. Mean Reward: 18.505. Std of Reward: 13.476. Training.
+[INFO] AmyImitation. Step: 450000. Time Elapsed: 3738.041 s. Mean Reward: 20.280. Std of Reward: 14.859. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-449976.onnx
+[INFO] AmyImitation. Step: 465000. Time Elapsed: 3865.210 s. Mean Reward: 16.839. Std of Reward: 15.249. Training.
+[INFO] AmyImitation. Step: 480000. Time Elapsed: 3992.416 s. Mean Reward: 20.775. Std of Reward: 14.889. Training.
+[INFO] AmyImitation. Step: 495000. Time Elapsed: 4118.722 s. Mean Reward: 19.492. Std of Reward: 14.122. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-499951.onnx
+[INFO] AmyImitation. Step: 510000. Time Elapsed: 4247.156 s. Mean Reward: 20.655. Std of Reward: 13.505. Training.
+[INFO] AmyImitation. Step: 525000. Time Elapsed: 4372.970 s. Mean Reward: 20.643. Std of Reward: 13.958. Training.
+[INFO] AmyImitation. Step: 540000. Time Elapsed: 4501.129 s. Mean Reward: 20.810. Std of Reward: 13.512. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-549987.onnx
+[INFO] AmyImitation. Step: 555000. Time Elapsed: 4627.000 s. Mean Reward: 20.497. Std of Reward: 14.799. Training.
+[INFO] AmyImitation. Step: 570000. Time Elapsed: 4753.857 s. Mean Reward: 20.930. Std of Reward: 14.126. Training.
+[INFO] AmyImitation. Step: 585000. Time Elapsed: 4880.319 s. Mean Reward: 22.416. Std of Reward: 14.730. Training.
+[INFO] AmyImitation. Step: 600000. Time Elapsed: 5010.120 s. Mean Reward: 23.050. Std of Reward: 12.443. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-599957.onnx
+[INFO] AmyImitation. Step: 615000. Time Elapsed: 5134.256 s. Mean Reward: 24.614. Std of Reward: 13.934. Training.
+[INFO] AmyImitation. Step: 630000. Time Elapsed: 5256.953 s. Mean Reward: 23.862. Std of Reward: 13.561. Training.
+[INFO] AmyImitation. Step: 645000. Time Elapsed: 5381.077 s. Mean Reward: 24.591. Std of Reward: 12.776. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-649984.onnx
+[INFO] AmyImitation. Step: 660000. Time Elapsed: 5505.345 s. Mean Reward: 25.755. Std of Reward: 12.757. Training.
+[INFO] AmyImitation. Step: 675000. Time Elapsed: 5631.159 s. Mean Reward: 24.231. Std of Reward: 13.034. Training.
+[INFO] AmyImitation. Step: 690000. Time Elapsed: 5756.785 s. Mean Reward: 24.366. Std of Reward: 13.001. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-699957.onnx
+[INFO] AmyImitation. Step: 705000. Time Elapsed: 5882.525 s. Mean Reward: 27.229. Std of Reward: 12.970. Training.
+[INFO] AmyImitation. Step: 720000. Time Elapsed: 6007.681 s. Mean Reward: 26.574. Std of Reward: 12.800. Training.
+[INFO] AmyImitation. Step: 735000. Time Elapsed: 6133.301 s. Mean Reward: 25.190. Std of Reward: 13.393. Training.
+[INFO] AmyImitation. Step: 750000. Time Elapsed: 6258.356 s. Mean Reward: 26.488. Std of Reward: 14.194. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-749952.onnx
+[INFO] AmyImitation. Step: 765000. Time Elapsed: 6385.528 s. Mean Reward: 28.200. Std of Reward: 13.238. Training.
+[INFO] AmyImitation. Step: 780000. Time Elapsed: 6510.048 s. Mean Reward: 26.886. Std of Reward: 13.083. Training.
+[INFO] AmyImitation. Step: 795000. Time Elapsed: 6636.904 s. Mean Reward: 26.534. Std of Reward: 12.361. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-799999.onnx
+[INFO] AmyImitation. Step: 810000. Time Elapsed: 6763.919 s. Mean Reward: 27.550. Std of Reward: 12.704. Training.
+[INFO] AmyImitation. Step: 825000. Time Elapsed: 6893.942 s. Mean Reward: 25.468. Std of Reward: 13.289. Training.
+[INFO] AmyImitation. Step: 840000. Time Elapsed: 7020.389 s. Mean Reward: 26.706. Std of Reward: 12.509. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-849943.onnx
+[INFO] AmyImitation. Step: 855000. Time Elapsed: 7147.010 s. Mean Reward: 28.133. Std of Reward: 11.682. Training.
+[INFO] AmyImitation. Step: 870000. Time Elapsed: 7273.242 s. Mean Reward: 28.694. Std of Reward: 12.280. Training.
+[INFO] AmyImitation. Step: 885000. Time Elapsed: 7398.193 s. Mean Reward: 27.376. Std of Reward: 11.965. Training.
+[INFO] AmyImitation. Step: 900000. Time Elapsed: 7524.328 s. Mean Reward: 27.021. Std of Reward: 12.654. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-899956.onnx
+[INFO] AmyImitation. Step: 915000. Time Elapsed: 7650.495 s. Mean Reward: 29.091. Std of Reward: 10.897. Training.
+[INFO] AmyImitation. Step: 930000. Time Elapsed: 7779.289 s. Mean Reward: 28.463. Std of Reward: 10.948. Training.
+[INFO] AmyImitation. Step: 945000. Time Elapsed: 7907.173 s. Mean Reward: 27.154. Std of Reward: 12.182. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-949967.onnx
+[INFO] AmyImitation. Step: 960000. Time Elapsed: 8032.680 s. Mean Reward: 27.825. Std of Reward: 12.548. Training.
+[INFO] AmyImitation. Step: 975000. Time Elapsed: 8158.429 s. Mean Reward: 27.838. Std of Reward: 11.422. Training.
+[INFO] AmyImitation. Step: 990000. Time Elapsed: 8284.909 s. Mean Reward: 27.880. Std of Reward: 12.680. Training.
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-999942.onnx
+[INFO] Exported results/dog_1/AmyImitation/AmyImitation-1000006.onnx
+[INFO] Copied results/dog_1/AmyImitation/AmyImitation-1000006.onnx to results/dog_1/AmyImitation.onnx.
